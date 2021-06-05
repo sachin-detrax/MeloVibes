@@ -9,7 +9,7 @@
 
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/slider"
+        android:id="@+id/Songslider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/slider_desc"
@@ -28,7 +28,7 @@
         app:tickVisible="false" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/coverImage"
 
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/coverart" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backButton"
         android:layout_width="38dp"
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
@@ -55,7 +55,7 @@
         android:background="#00FFFFFF"
         android:contentDescription="@string/back_button"
 
-        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintBottom_toTopOf="@+id/Songslider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,42 +64,109 @@
         app:srcCompat="@drawable/back" />
 
     <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:id="@+id/prevButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/pause_button"
-        android:src="@drawable/pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.78"
+        app:srcCompat="@drawable/circlepause" />
+
+    <TextView
+        android:id="@+id/songText"
+        android:layout_width="241dp"
+        android:layout_height="49dp"
+        android:text="SONG NAME"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/albumText"
+        android:layout_width="233dp"
+        android:layout_height="29dp"
+        android:text="ALBUM NAME"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing Now"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
 
     <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/next_button"
-        android:src="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.519"
+        app:srcCompat="@drawable/shuffle" />
 
     <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="#02FFFFFF"
-        android:contentDescription="@string/prev_button"
-        android:src="@drawable/prev"
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.519"
+        app:srcCompat="@drawable/repeat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
