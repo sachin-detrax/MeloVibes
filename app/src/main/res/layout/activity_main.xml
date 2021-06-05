@@ -29,34 +29,77 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="197dp"
-        android:layout_height="188dp"
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginStart="96dp"
         android:layout_marginEnd="96dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/cover_art"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248"
+        app:layout_constraintVertical_bias="0.252"
         app:srcCompat="@drawable/coverart" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="67dp"
-        android:layout_height="36dp"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="339dp"
         android:layout_marginBottom="369dp"
         android:background="#00FFFFFF"
+        android:contentDescription="@string/back_button"
 
         app:layout_constraintBottom_toTopOf="@+id/slider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/pause_button"
+        android:src="@drawable/pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/next_button"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#02FFFFFF"
+        android:contentDescription="@string/prev_button"
+        android:src="@drawable/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

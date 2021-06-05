@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">MeloVibes</string>
     <string name="slider_desc">song</string>
+    <string name="coverart">coverart</string>
+    <string name="back_button">back_button</string>
+    <string name="cover_art">cover_art</string>
+    <string name="pause_button">pause_button</string>
+    <string name="next_button">next_button</string>
+    <string name="prev_button">prev_button</string>
 
 </resources>
