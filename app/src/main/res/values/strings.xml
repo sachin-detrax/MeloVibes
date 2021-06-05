@@ -7,5 +7,9 @@
     <string name="pause_button">pause_button</string>
     <string name="next_button">next_button</string>
     <string name="prev_button">prev_button</string>
+    <string name="allSongs">All Songs</string>
+    <string name="recentlyAdded">Recently Added</string>
+    <string name="mostPlayed">Most Played</string>
+    <string name="leastPlayed">Least Played</string>
 
 </resources>
